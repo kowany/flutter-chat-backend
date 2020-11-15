@@ -4,7 +4,6 @@ const jwt = require('jsonwebtoken');
 const validarJWT = ( req, res = response, next ) => {
     // leer token
     const token = req.header('x-token');
-    console.log( token );
 
     if ( !token ) {
         // 401 Unauthorized
